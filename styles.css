@@ -2,6 +2,7 @@
     --primary-color: #F27A1A;
     --account-link-color: #333;
     --account-link-hover-color: var(--primary-color);
+    --banner-color: #C4C4C4;
 }
 
 html,
@@ -111,4 +112,48 @@ ul {
     position: absolute;
     top: 20px;
     left: -60px;
+}
+
+.account-list li:hover .user-menu-container{
+    padding:15px;
+}
+
+.triangle{
+    border-color: blue transparent transparent transparent;
+    border-style: solid;
+    border-width: 20px 10px 0px 10px;
+    width: 0px;
+    height: 0px;
+}
+
+.content{
+    display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.main{
+  margin-right:20px;
+}
+
+.banner{
+    background:var(--banner-color);
+  text-align: center;
+  
+}
+
+.banner:last-child{
+    margin-bottom: 0;
+}
+
+.long-banner{
+    width:750px;
+    height:310px;
+    margin-bottom:15px;
+}
+
+.short-banner{
+    width:330px;
+    height:330px;
+    margin-bottom:40px;
+
 }
