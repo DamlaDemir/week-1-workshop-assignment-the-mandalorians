@@ -46,6 +46,8 @@ ul {
     display: grid;
     grid-template-columns: 140px 1fr 335px;
     margin-top: 10px;
+    height: 64px;
+    align-items: center;
 }
 
 .search {
@@ -71,11 +73,32 @@ ul {
     border: none;
 }
 
+.logo-search-account-container .accounts-nav {
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.accounts-list ul{
+    height: 100%;
+}
+
+.accounts-nav li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.accounts-nav ul {
+    margin: 0;
+}
+
 .account-list {
     display: flex;
     justify-content: flex-end;
     gap: 30px;
     font-size: 12px;
+    height: 100%;
 }
 
 .account-list li a {
@@ -85,38 +108,39 @@ ul {
     color: var(--account-link-color);
 }
 
-.account-list li a:hover {
+/* Change a tags color when hover */
+.account-list li:hover > a {
     color: var(--primary-color);
 }
 
-.account-list li a:hover svg path {
+/* Change svg color when hover */
+.account-list li:hover svg path {
     fill: var(--account-link-hover-color)
 }
 
 .user-menu {
-     /* AAA */ 
-     display: none;
+    display: none;
     width: 170px;
     height: 289px;
     padding: 15px 10px;
     background-color: #fff;
     border: 1px solid #E6E6E6;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
-    top: 500px;
-    margin-top: 10px;
+    position: absolute;
+    top: 41px;
+    left: -60px;
 }
-
 
 .user-menu:after,
 .user-menu:before {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid #fff;
-    /* bottom: -20px; */
+    /* bottom: -20px; */  /* TODO: triangle border'ını etkiliyor */
     top: -10px;
     transform: rotate(180deg);
     content: '';
-    left: 50%;
+    left: 59%;
     margin-left: -10px;
     position: absolute;
 }
@@ -125,8 +149,8 @@ ul {
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
     border-top: 11px solid;
-    border-top-color: inherit; /* Can't be included in the shorthand to work */
-    /* bottom: -23px; */
+    border-top-color: inherit;
+    /* bottom: -23px; */ /* TODO: triangle border'ını etkiliyor */
     top: -11px;
     margin-left: -11px;
 }
@@ -134,41 +158,45 @@ ul {
 .user-menu li {
     font-size: 14px;
     color: #1B1B1B;
+    height: 18px;
 }
 
-
+.account-list ul {
+    margin: 0;
+}
 
 .account-list li:first-child {
     color: var(--primary-color);
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */ /* //TODO: account list içindekiler ortalanmasını engelliyor */
+}
+
+.account-list li {
+    cursor: pointer;
 }
 
 .account-list li:hover {
     position: relative;
 }
 
+/* Accounts hover */
 .account-list li:hover .user-menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: absolute;
-    top: 20px;
-    left: -60px;
+    
 }
 
-.account-list li:hover .usermenu-container {
+.account-list li:hover .usermenu {
     display: block;
     position: absolute;
     top: 20px;
     left: -60px;
 }
 
-
-
-
-
-.account-list li:hover .user-menu-container {
-    padding: 15px;
+.account-list li:hover .user-menu {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 11px;
 }
 
 .triangle {
