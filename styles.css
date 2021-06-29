@@ -2,7 +2,9 @@
   --primary-color: #f27a1a;
   --account-link-color: #333;
   --account-link-hover-color: var(--primary-color);
+  --secondary-text-color: #ffffff;
   --banner-color: #c4c4c4;
+  --banner-content-color: #1b1b1b;
 }
 
 rectangle {
