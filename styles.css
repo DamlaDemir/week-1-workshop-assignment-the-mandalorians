@@ -123,7 +123,38 @@ ul {
   top: 20px;
   left: -60px;
 }
+.short-banner {
+  width: 330px;
+  height: 330px;
+  margin-bottom: 40px;
+}
 
+.stroy-wrapper {
+  margin-top: 29px;
+  margin-bottom: 27px;
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+}
+.story-item {
+  display: flex;
+  width: 75px;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.story-item label {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #333333;
+}
 .account-list li:hover .user-menu-container {
   padding: 15px;
 }
