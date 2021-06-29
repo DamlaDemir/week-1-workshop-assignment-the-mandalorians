@@ -5,8 +5,7 @@
     --banner-color: #C4C4C4;
 }
 
-html,
-body {
+html, body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -33,10 +32,12 @@ ul {
     justify-content: flex-end;
     gap: 30px;
 }
+
 .header-links a {
     color: #999999;
     font-size: 12px;
 }
+
 .header-links a:hover {
     color: #666666;
 }
@@ -56,6 +57,7 @@ ul {
     border-radius: 6px;
     padding: 10px;
 }
+
 .search input {
     flex: 1;
     background: none;
@@ -63,6 +65,7 @@ ul {
     outline: none;
     font-size: 12px;
 }
+
 .search button {
     background: none;
     border: none;
@@ -86,39 +89,89 @@ ul {
     color: var(--primary-color);
 }
 
-
 .account-list li a:hover svg path {
     fill: var(--account-link-hover-color)
 }
 
 .user-menu {
-    display: none;
+     /* AAA */ 
+     display: none;
     width: 170px;
     height: 289px;
     padding: 15px 10px;
     background-color: #fff;
     border: 1px solid #E6E6E6;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+    top: 500px;
+    margin-top: 10px;
 }
+
+
+.user-menu:after,
+.user-menu:before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    /* bottom: -20px; */
+    top: -10px;
+    transform: rotate(180deg);
+    content: '';
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+}
+
+.user-menu:before {
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid;
+    border-top-color: inherit; /* Can't be included in the shorthand to work */
+    /* bottom: -23px; */
+    top: -11px;
+    margin-left: -11px;
+}
+
+.user-menu li {
+    font-size: 14px;
+    color: #1B1B1B;
+}
+
+
+
 .account-list li:first-child {
     color: var(--primary-color);
     margin-bottom: 12px;
 }
+
 .account-list li:hover {
     position: relative;
 }
+
 .account-list li:hover .user-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    left: -60px;
+}
+
+.account-list li:hover .usermenu-container {
     display: block;
     position: absolute;
     top: 20px;
     left: -60px;
 }
 
-.account-list li:hover .user-menu-container{
-    padding:15px;
+
+
+
+
+.account-list li:hover .user-menu-container {
+    padding: 15px;
 }
 
-.triangle{
+.triangle {
     border-color: blue transparent transparent transparent;
     border-style: solid;
     border-width: 20px 10px 0px 10px;
@@ -126,34 +179,32 @@ ul {
     height: 0px;
 }
 
-.content{
+.content {
     display: grid;
-  grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
 }
 
-.main{
-  margin-right:20px;
+.main {
+    margin-right: 20px;
 }
 
-.banner{
-    background:var(--banner-color);
-  text-align: center;
-  
+.banner {
+    background: var(--banner-color);
+    text-align: center;
 }
 
-.banner:last-child{
+.banner:last-child {
     margin-bottom: 0;
 }
 
-.long-banner{
-    width:750px;
-    height:310px;
-    margin-bottom:15px;
+.long-banner {
+    width: 750px;
+    height: 310px;
+    margin-bottom: 15px;
 }
 
-.short-banner{
-    width:330px;
-    height:330px;
-    margin-bottom:40px;
-
+.short-banner {
+    width: 330px;
+    height: 330px;
+    margin-bottom: 40px;
 }
