@@ -2,7 +2,18 @@
   --primary-color: #f27a1a;
   --account-link-color: #333;
   --account-link-hover-color: var(--primary-color);
+  --secondary-text-color: #ffffff;
   --banner-color: #c4c4c4;
+  --banner-content-color: #1b1b1b;
+}
+
+rectangle {
+  position: absolute;
+  background: #e8e8e8;
+  width: 1920px;
+  height: 1px;
+  top: 191px;
+  left: 0px;
 }
 
 html,
@@ -112,43 +123,6 @@ ul {
   top: 20px;
   left: -60px;
 }
-
-.account-list li:hover .user-menu-container {
-  padding: 15px;
-}
-
-.triangle {
-  border-color: blue transparent transparent transparent;
-  border-style: solid;
-  border-width: 20px 10px 0px 10px;
-  width: 0px;
-  height: 0px;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-.main {
-  margin-right: 20px;
-}
-
-.banner {
-  background: var(--banner-color);
-  text-align: center;
-}
-
-.banner:last-child {
-  margin-bottom: 0;
-}
-
-.long-banner {
-  width: 750px;
-  height: 310px;
-  margin-bottom: 15px;
-}
-
 .short-banner {
   width: 330px;
   height: 330px;
@@ -181,3 +155,92 @@ ul {
 
   color: #333333;
 }
+.account-list li:hover .user-menu-container {
+  padding: 15px;
+}
+
+.triangle {
+  border-color: blue transparent transparent transparent;
+  border-style: solid;
+  border-width: 20px 10px 0px 10px;
+  width: 0px;
+  height: 0px;
+}
+
+/* #region banner */
+.content {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+}
+.long-banner {
+  margin-bottom: 15px;
+}
+
+.long-banner:hover {
+  outline: 1px solid var(--primary-color);
+  outline-offset: -1px;
+}
+
+.long-banner a,
+.long-banner a:visited,
+.sidebar a,
+.sidebar a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+.long-banner:hover .banner-content {
+  background: var(--primary-color);
+}
+
+.long-banner:hover .banner-link {
+  display: block;
+}
+
+.long-banner-holder {
+  background: var(--banner-color);
+  width: 750px;
+  height: 310px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  background: var(--banner-content-color);
+  color: var(--secondary-text-color);
+  height: 30px;
+  font-size: 14px;
+  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-link {
+  display: none;
+  color: var(--secondary-text-color);
+}
+
+.banner-link img {
+  margin-left: 7px;
+}
+
+.short-banner-holder {
+  background: var(--banner-color);
+  margin-bottom: 40px;
+  width: 330px;
+  height: 330px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main:last-child,
+.sidebar:last-child {
+  margin-bottom: 0;
+}
+
+/* #endregion banner */
