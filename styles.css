@@ -1,114 +1,183 @@
 :root {
-    --primary-color: #F27A1A;
-    --account-link-color: #333;
-    --account-link-hover-color: var(--primary-color);
+  --primary-color: #f27a1a;
+  --account-link-color: #333;
+  --account-link-hover-color: var(--primary-color);
+  --banner-color: #c4c4c4;
 }
 
 html,
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .container {
-    width: 1080px;
-    margin: 0 auto;
+  width: 1080px;
+  margin: 0 auto;
 }
 
 .header-links {
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
 }
 .header-links a {
-    color: #999999;
-    font-size: 12px;
+  color: #999999;
+  font-size: 12px;
 }
 .header-links a:hover {
-    color: #666666;
+  color: #666666;
 }
 
 .logo-search-account-container {
-    display: grid;
-    grid-template-columns: 140px 1fr 335px;
-    margin-top: 10px;
+  display: grid;
+  grid-template-columns: 140px 1fr 335px;
+  margin-top: 10px;
 }
 
 .search {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 42px;
-    background-color: #F3F3F3;
-    border-radius: 6px;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 42px;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  padding: 10px;
 }
 .search input {
-    flex: 1;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 12px;
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 12px;
 }
 .search button {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
 
 .account-list {
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  font-size: 12px;
 }
 
 .account-list li a {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: var(--account-link-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--account-link-color);
 }
 
 .account-list li a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
-
 .account-list li a:hover svg path {
-    fill: var(--account-link-hover-color)
+  fill: var(--account-link-hover-color);
 }
 
 .user-menu {
-    display: none;
-    width: 170px;
-    height: 289px;
-    padding: 15px 10px;
-    background-color: #fff;
-    border: 1px solid #E6E6E6;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+  display: none;
+  width: 170px;
+  height: 289px;
+  padding: 15px 10px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
 }
 .account-list li:first-child {
-    color: var(--primary-color);
-    margin-bottom: 12px;
+  color: var(--primary-color);
+  margin-bottom: 12px;
 }
 .account-list li:hover {
-    position: relative;
+  position: relative;
 }
 .account-list li:hover .user-menu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: -60px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: -60px;
+}
+
+.account-list li:hover .user-menu-container {
+  padding: 15px;
+}
+
+.triangle {
+  border-color: blue transparent transparent transparent;
+  border-style: solid;
+  border-width: 20px 10px 0px 10px;
+  width: 0px;
+  height: 0px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.main {
+  margin-right: 20px;
+}
+
+.banner {
+  background: var(--banner-color);
+  text-align: center;
+}
+
+.banner:last-child {
+  margin-bottom: 0;
+}
+
+.long-banner {
+  width: 750px;
+  height: 310px;
+  margin-bottom: 15px;
+}
+
+.short-banner {
+  width: 330px;
+  height: 330px;
+  margin-bottom: 40px;
+}
+
+.stroy-wrapper {
+  margin-top: 29px;
+  margin-bottom: 27px;
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+}
+.story-item {
+  display: flex;
+  width: 75px;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.story-item label {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #333333;
 }
