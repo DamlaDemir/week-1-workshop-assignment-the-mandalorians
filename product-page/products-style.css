@@ -1,215 +1,217 @@
 :root {
-    --primary-color: #F27A1A;
-    --account-link-color: #333;
-    --account-link-hover-color: var(--primary-color);
-    --banner-color: #C4C4C4;
+  --primary-color: #f27a1a;
+  --account-link-color: #333;
+  --account-link-hover-color: var(--primary-color);
+  --banner-color: #c4c4c4;
 }
 
-html, body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+html,
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    /* TODO: margin padding hep sıkıntı çıkarıyor */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* TODO: margin padding hep sıkıntı çıkarıyor */
 }
 
 .container {
-    width: 1080px;
-    margin: 0 auto;
+  width: 1080px;
+  margin: 0 auto;
 }
 
 .header-links {
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
 }
 
 .header-links a {
-    color: #999999;
-    font-size: 12px;
+  color: #999999;
+  font-size: 12px;
 }
 
 .header-links a:hover {
-    color: #666666;
+  color: #666666;
 }
 
 .logo-search-account-container {
-    display: grid;
-    grid-template-columns: 140px 1fr 335px;
-    margin-top: 10px;
+  display: grid;
+  grid-template-columns: 140px 1fr 335px;
+  margin-top: 10px;
 }
 
 .search {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 42px;
-    background-color: #F3F3F3;
-    border-radius: 6px;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 42px;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  padding: 10px;
 }
 
 .search input {
-    flex: 1;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 12px;
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 12px;
 }
 
 .search button {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
 
 .account-list {
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  font-size: 12px;
 }
 
 .account-list li a {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: var(--account-link-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--account-link-color);
 }
 
 .account-list li a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .account-list li a:hover svg path {
-    fill: var(--account-link-hover-color)
+  fill: var(--account-link-hover-color);
 }
 
 .user-menu {
-    display: none;
-    width: 170px;
-    height: 289px;
-    padding: 15px 10px;
-    background-color: #fff;
-    border: 1px solid #E6E6E6;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+  display: none;
+  width: 170px;
+  height: 289px;
+  padding: 15px 10px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
 }
 
 .account-list li:first-child {
-    color: var(--primary-color);
-    margin-bottom: 12px;
+  color: var(--primary-color);
+  margin-bottom: 12px;
 }
 
 .account-list li:hover {
-    position: relative;
+  position: relative;
 }
 
 .account-list li:hover .user-menu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: -60px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: -60px;
 }
 
 .account-list li:hover .user-menu-container {
-    padding: 15px;
+  padding: 15px;
 }
 
 .triangle {
-    border-color: blue transparent transparent transparent;
-    border-style: solid;
-    border-width: 20px 10px 0px 10px;
-    width: 0px;
-    height: 0px;
+  border-color: blue transparent transparent transparent;
+  border-style: solid;
+  border-width: 20px 10px 0px 10px;
+  width: 0px;
+  height: 0px;
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 185px 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 185px 1fr;
+  gap: 20px;
 }
 
 .main {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 /* menu header başlangıç */
 
 .menu {
-    margin: 30px 0;
-    width: 1095px;
+  margin: 30px 0;
+  width: 1095px;
 }
 
 .menu .menu-main-categories {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 0;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0;
+  text-align: center;
 }
 
-.menu .menu-main-categories>li {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-    padding: 0 12px;
+.menu .menu-main-categories > li {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  padding: 0 12px;
 }
 
-.menu .menu-main-categories>li:first-child, .menu .menu-main-categories>li:hover {
-    border-bottom: 1px solid var(--primary-color);
+.menu .menu-main-categories > li:first-child,
+.menu .menu-main-categories > li:hover {
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .menu-sub-categories {
-    display: none;
-    position: absolute;
-    flex-flow: column wrap;
-    width: 1100px;
-    height: 335px;
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: normal;
-    color: #666;
-    background-color: #fff;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-    left: 0;
-    top: 20px;
-    gap: 20px;
-    padding: 24px 24px 0 24px;
-    text-align: initial;
+  display: none;
+  position: absolute;
+  flex-flow: column wrap;
+  width: 1100px;
+  height: 335px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #666;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  left: 0;
+  top: 20px;
+  gap: 20px;
+  padding: 24px 24px 0 24px;
+  text-align: initial;
 }
 
 .menu-sub-categories ul {
-    padding: 0;
+  padding: 0;
 }
 
 .menu-sub-categories ul li:first-child {
-    font-size: 15px;
-    color: #333333;
-    line-height: 19px;
+  font-size: 15px;
+  color: #333333;
+  line-height: 19px;
 }
 
 .menu-main-categories ul li {
-    margin-bottom: 2.5px;
+  margin-bottom: 2.5px;
 }
 
-.menu .menu-main-categories>li:hover .menu-sub-categories {
-    display: flex;
+.menu .menu-main-categories > li:hover .menu-sub-categories {
+  display: flex;
 }
 
 .menu-sub-categories img {
-    width: 300px;
-    height: 120px;
+  width: 300px;
+  height: 120px;
 }
 
 /* menu header bitiş */
@@ -217,190 +219,187 @@ ul {
 /* PRODUCT SAYFASI BAŞLANGIÇ */
 
 .bread-crumb ul {
-    display: flex;
-    margin: 10px 0px;
-    gap: 5px;
-    padding-left: 0;
+  display: flex;
+  margin: 10px 0px;
+  gap: 5px;
+  padding-left: 0;
 }
 
 .bread-crumb ul li:not(:first-child)::before {
-    content: url(../assets/icons/icon-arrow-left.svg);
-    margin: 0px 10px 0px 10px;
+  content: url(../assets/icons/icon-arrow-left.svg);
+  margin: 0px 10px 0px 10px;
 }
 
 .bread-crumb ul li a {
-    font-size: 14px;
-    color: #333;
+  font-size: 14px;
+  color: #333;
 }
 
-.left-frame {}
-
 .left-frame-header {
-    display: inline-block;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17.6px;
-    height: 18px;
-    margin-bottom: 5px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17.6px;
+  height: 18px;
+  margin-bottom: 5px;
 }
 
 .left-frame-text {
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 16px;
-    color: black;
-    margin-bottom: 5px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: black;
+  margin-bottom: 5px;
 }
 
 .seperator span {
-    display: block;
-    border-bottom: 1px solid #ECECEC;
-    margin: 20px 0;
+  display: block;
+  border-bottom: 1px solid #ececec;
+  margin: 20px 0;
 }
 
 .related-categories ul li {
-    height: 16px;
-    margin-bottom: 5px;
-    /* TODO: related categories a tagları arasında 5px boşluk olacak fakat daha iyi bir yöntem varmı ?*/
+  height: 16px;
+  margin-bottom: 5px;
+  /* TODO: related categories a tagları arasında 5px boşluk olacak fakat daha iyi bir yöntem varmı ?*/
 }
 
 .show-more {
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    color: var(--primary-color);
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    margin-top: 10px;
-    ;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--primary-color);
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 10px;
 }
 
 /*Fırsat Ürünleri*/
 
 [type="checkbox"] {
-    opacity: 0;
-    position: absolute;
-    /* display: none; */
+  opacity: 0;
+  position: absolute;
+  /* display: none; */
 }
 
-/*.container input {
+/* .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-}*/
+} */
 
 .checkmark {
-    position: absolute;
-    top: 3px;
-    left: 4px;
-    height: 18px;
-    width: 18px;
-    border-radius: 2px;
-    border: 1.5px solid #d6d6d6;
-    background-color: white;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  height: 18px;
+  width: 18px;
+  border-radius: 2px;
+  border: 1.5px solid #d6d6d6;
+  background-color: white;
 }
 
 .container .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-    left: 7px;
-    top: 3px;
-    width: 3px;
-    height: 7px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.container input:checked~.checkmark:after {
-    display: block;
+.container input:checked ~ .checkmark:after {
+  display: block;
 }
 
 .checkbox-container {
-    position: relative;
+  position: relative;
 }
 
 .checkbox-container input {
-    width: 18px;
-    height: 18px;
-    border-radius: 2px;
-    border: 2px solid #d6d6d6;
-    background-color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 2px solid #d6d6d6;
+  background-color: white;
 }
 
-.checkbox-container input:checked~.checkmark {
-    background-color: var(--primary-color);
-    border: var(--primary-color);
+.checkbox-container input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+  border: var(--primary-color);
 }
 
-.checkbox-container input:active~.checkmark {
-    background-color: var(--primary-color)
+.checkbox-container input:active ~ .checkmark {
+  background-color: var(--primary-color);
 }
 
-.checkbox-container input:checked~.checkmark:after {
-    display: block;
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
 }
 
 .checkbox-text {
-    position: relative;
-    left: 30px;
-    top: 3px;
+  position: relative;
+  left: 30px;
+  top: 3px;
 }
 
 .brand .brand-search-bar {
-    width: 175px;
-    height: 27px;
-    border-radius: 3px;
-    background-color: #FAFAFA;
-    border: 1px solid #E2E2E2;
-    padding: 6px;
-    color: #4B4B4B;
-    font-size: 12px;
-    line-height: 15px;
+  width: 175px;
+  height: 27px;
+  border-radius: 3px;
+  background-color: #fafafa;
+  border: 1px solid #e2e2e2;
+  padding: 6px;
+  color: #4b4b4b;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .brand {
-    height: 251px;
+  height: 251px;
 }
 
 .brand-details li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
+  background: #f1f1f1;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
+  background: #888;
+  border-radius: 10px;
 }
 
 .brand-details {
-    overflow: auto;
-    height: 183px;
-    margin-top: 10px;
-    width: 175px;
+  overflow: auto;
+  height: 183px;
+  margin-top: 10px;
+  width: 175px;
 }
 
 /* Producst Frame */
 
 .products-frame {
-    background-color: lightgrey;
-    height: 100px;
+  background-color: lightgrey;
+  height: 100px;
 }
