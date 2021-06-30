@@ -144,9 +144,77 @@ ul {
     margin-right: 20px;
 }
 
+/* menu header başlangıç */
+
+.menu {
+    margin: 30px 0;
+    width: 1095px;
+}
+
+.menu .menu-main-categories {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+.menu .menu-main-categories>li {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    padding: 0 12px;
+}
+
+.menu .menu-main-categories>li:first-child, .menu .menu-main-categories>li:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.menu-sub-categories {
+    display: none;
+    position: absolute;
+    flex-flow: column wrap;
+    width: 1100px;
+    height: 335px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #666;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    left: 0;
+    top: 20px;
+    gap: 20px;
+    padding: 24px 24px 0 24px;
+    text-align: initial;
+}
+
+.menu-sub-categories ul {
+    padding: 0;
+}
+
+.menu-sub-categories ul li:first-child {
+    font-size: 15px;
+    color: #333333;
+    line-height: 19px;
+}
+
+.menu-main-categories ul li {
+    margin-bottom: 2.5px;
+}
+
+.menu .menu-main-categories>li:hover .menu-sub-categories {
+    display: flex;
+}
+
+.menu-sub-categories img {
+    width: 300px;
+    height: 120px;
+}
+
+/* menu header bitiş */
+
 /* PRODUCT SAYFASI BAŞLANGIÇ */
-
-
 
 .bread-crumb ul {
     display: flex;
@@ -165,8 +233,7 @@ ul {
     color: #333;
 }
 
-.left-frame {
-}
+.left-frame {}
 
 .left-frame-header {
     display: inline-block;
@@ -184,7 +251,7 @@ ul {
     font-size: 13px;
     line-height: 16px;
     color: black;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
 
 .seperator span {
@@ -221,13 +288,13 @@ ul {
     /* display: none; */
 }
 
-/* .container input {
+/*.container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-} */
+}*/
 
 .checkmark {
     position: absolute;
@@ -235,8 +302,6 @@ ul {
     left: 4px;
     height: 18px;
     width: 18px;
-  
-  
     border-radius: 2px;
     border: 1.5px solid #d6d6d6;
     background-color: white;
@@ -246,8 +311,8 @@ ul {
     content: "";
     position: absolute;
     display: none;
-    left: 5px;
-    top: 2px;
+    left: 7px;
+    top: 3px;
     width: 3px;
     height: 7px;
     border: solid white;
@@ -274,7 +339,8 @@ ul {
 }
 
 .checkbox-container input:checked~.checkmark {
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
+    border: var(--primary-color);
 }
 
 .checkbox-container input:active~.checkmark {
@@ -285,10 +351,51 @@ ul {
     display: block;
 }
 
-.product-stars .left-frame-text .stars-text{
+.checkbox-text {
     position: relative;
     left: 30px;
     top: 3px;
+}
+
+.brand .brand-search-bar {
+    width: 175px;
+    height: 27px;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    border: 1px solid #E2E2E2;
+    padding: 6px;
+    color: #4B4B4B;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.brand {
+    height: 251px;
+}
+
+.brand-details li {
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.brand-details {
+    overflow: auto;
+    height: 183px;
+    margin-top: 10px;
+    width: 175px;
 }
 
 /* Producst Frame */
