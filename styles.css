@@ -68,6 +68,8 @@ ul {
   background-color: #f3f3f3;
   border-radius: 6px;
   padding: 10px;
+  position: relative;
+  width: 600px;
 }
 
 .search input {
@@ -81,6 +83,62 @@ ul {
 .search button {
   background: none;
   border: none;
+}
+
+.search .searchbar-dropdown {
+  background-color: #ffffff;
+  width: 600px;
+  height: 167px;
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  right: -1px; /* //TODO:  burası nasıl olacak */
+  left: 0px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  display: none;
+}
+
+.search:focus-within .searchbar-dropdown {
+  display: inline;
+  box-shadow: 0px 0px 0px 1px var(--primary-color);
+}
+.search:focus-within {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0px 0px 0px 1px var(--primary-color);
+}
+
+/* Dropdown */
+
+.searchbar-dropdown {
+  padding: 17px 10px 0 18px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-header span {
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.dropdown-header button {
+  font-size: 12px;
+  color: #333;
+  font-family: Source Sans Pro;
+}
+
+.dropdown-body .dropdown-list {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-body .dropdown-list a {
+  color: #333;
+  font-size: 12px;
 }
 
 .account-list {
