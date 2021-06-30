@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products-style.css">
 </head>
 
 <body>
     <div class="container">
         <section class="top-banner">
-            <img src="assets/images/top-banner.jpg" alt="Trendyol üst kampanya banner">
+            <img src="../assets/images/top-banner.jpg" alt="Trendyol üst kampanya banner">
         </section>
 
         <header>
@@ -27,7 +27,7 @@
 
             <div class="logo-search-account-container">
                 <a href="/">
-                    <img src="assets/images/logo.svg" alt="Trendyol Logo">
+                    <img src="../assets/images/logo.svg" alt="Trendyol Logo">
                 </a>
                 <form class="search" action="" method="POST">
                     <input type="search" placeholder="Aradığınız ürün, kategori veya markayı yazınız">
@@ -49,7 +49,7 @@
                 <nav>
                     <ul class="account-list">
                         <li>
-                            <a href="product-page/products.html">
+                            <a href="https://www.trendyol.com/hesabim/siparislerim">
                                 <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -111,17 +111,61 @@
                 </nav>
             </div>
         </header>
-        <!--Ana sayfa-->
-        <div class="content">
-            <div class="main">
-                <div class="banner long-banner">750x310</div>
-                <div class="banner long-banner">750x310</div>
+        <!--Products-->
+        <section class="content-wrapper">
+            <div class="bread-crumb">
+                <ul>
+                    <li><a href="#">Ana Sayfa</a></li>
+                    <li><a href="#">Kadın</a></li>
+                    <li><a href="#">Giyim</a></li>
+                </ul>
             </div>
-            <div class="sidebar">
-                <div class="banner short-banner">330x330</div>
-                <div class="banner short-banner">330x330</div>
+            <div class="content">
+                <aside class="left-frame">
+                    <div class="related-categories">
+                        <span class="left-frame-header">İlgili Kategoriler</span>
+                        <ul>
+                            <li><a href="#" class="left-frame-text">T-shirt</a></li>
+                            <li><a href="#" class="left-frame-text">Elbise</a></li>
+                            <li><a href="#" class="left-frame-text">Bluz&Tunik&Büstiyer</a></li>
+                            <li><a href="#" class="left-frame-text">Jeans</a></li>
+                            <li><a href="#" class="left-frame-text">Gömlek</a></li>
+                        </ul>
+                        <button class="show-more">DAHA FAZLA GÖSTER</button>
+                    </div>
+                    <div class="seperator"><span></span></div>
+                    <div class="product-with-stars">
+                        <span class="left-frame-header">Fırsat Ürünleri</span>
+                        <ul class="product-stars">
+                            <li class="left-frame-text">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="four" value="four" />
+                                    <span class="checkmark"></span>
+                                    <span class="stars-text">
+                                        4
+                                        Yıldızlı Fırsat
+                                        Ürünleri
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="left-frame-text">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="three" value="three" />
+                                    <span class="checkmark"></span><span class="stars-text">3 Yıldızlı Fırsat Ürünleri</span>
+                                    </label>
+                            </li>
+                            <li class="left-frame-text">
+                                <label class="checkbox-container"><input type="checkbox" name="two" value="two" />
+                                    <span class="checkmark"></span>
+                                    <span class="stars-text">2 Yıldızlı Fırsat Ürünleri</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="seperator"><span></span></div>
+                </aside>
+                <main class="products-frame">products frame</main>
             </div>
-        </div>
+        </section>
 
     </div>
 </body>
