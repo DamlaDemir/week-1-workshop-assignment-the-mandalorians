@@ -17,6 +17,7 @@ body {
 
 a {
   text-decoration: none;
+  color: initial;
 }
 
 ul {
@@ -229,7 +230,9 @@ ul {
   padding: 0 12px;
 }
 
-.menu .menu-main-categories > li:first-child,
+.menu .menu-main-categories > li:first-child {
+  border-bottom: 1px solid #fff;
+}
 .menu .menu-main-categories > li:hover {
   border-bottom: 1px solid var(--primary-color);
 }
@@ -418,7 +421,13 @@ ul {
   top: 3px;
 }
 
-.brand .brand-search-bar {
+/* region Brand Filter Wrapper */
+
+.brand-filter-wrapper {
+  height: 251px;
+}
+
+.brand-filter-wrapper .brand-search-bar {
   width: 175px;
   height: 27px;
   border-radius: 3px;
@@ -430,11 +439,14 @@ ul {
   line-height: 15px;
 }
 
-.brand {
-  height: 251px;
+.brand-filters {
+  overflow: auto;
+  height: 183px;
+  margin-top: 10px;
+  width: 175px;
 }
 
-.brand-details li {
+.brand-filters li {
   margin-bottom: 10px;
 }
 
@@ -452,12 +464,83 @@ ul {
   border-radius: 10px;
 }
 
-.brand-details {
-  overflow: auto;
-  height: 183px;
-  margin-top: 10px;
-  width: 175px;
+/* endregion Brand Filter Wrapper */
+
+/* region Price Filter Wrapper */
+
+.price-filter-wrapper {
+  font-size: 12px;
+  line-height: 15px;
 }
+
+.price-filter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-filter-form label {
+  height: 20px;
+  margin: 5px 0 0 0;
+}
+
+.price-range-search-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.min-max-price-input {
+  width: 58px;
+  height: 27px;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  background: #fafafa;
+  text-align: center;
+  color: #4b4b4b;
+}
+
+.price-range-search {
+  width: 27px;
+  height: 27px;
+  padding: 4px;
+  background-color: #dadada;
+  border-radius: 3px;
+  border: 0;
+  margin-left: 10px;
+}
+
+.price-filter-item-link {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price-filter-item-radio {
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #dadada;
+  appearance: none;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  margin: 0 10px 0 2px;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+}
+.price-filter-item-radio:checked {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+/* endregion Price Filter Wrapper */
+
+/* region Cargo Filter Wrapper */
+
+.cargo-filter-wrapper .checkbox-text {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* endregion Cargo Filter Wrapper */
 
 /* Producst Frame */
 
