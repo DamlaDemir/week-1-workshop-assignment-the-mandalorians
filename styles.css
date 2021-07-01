@@ -141,11 +141,38 @@ ul {
   font-size: 12px;
 }
 
+/* Kopyalandı (START) */
+.logo-search-account-container .accounts-nav {
+  height: 42px;
+  /* display: flex;
+  align-items: center; */
+  justify-content: right;
+}
+
+.accounts-list ul{
+  height: 100%;
+}
+
+.accounts-nav li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.accounts-nav ul {
+  margin: 0;
+}
+
+/* Kopyalandı (END) */
+
 .account-list {
   display: flex;
   justify-content: flex-end;
   gap: 30px;
   font-size: 12px;
+  height: 100%;
+  padding: 0;
+  margin-left: auto;
 }
 
 .account-list li a {
@@ -174,6 +201,7 @@ ul {
   position: absolute;
   top: 41px;
   left: -60px;
+  z-index: 999;
 }
 
 .user-menu:after,
@@ -208,7 +236,7 @@ ul {
 
 .account-list li:first-child {
   color: var(--primary-color);
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */ /* TODO: user-menu ye margin atıyor */
 }
 
 .account-list li:hover {
@@ -216,11 +244,11 @@ ul {
 }
 
 .account-list li:hover .user-menu {
-  display: block;
-  position: absolute;
-  top: 20px;
-  left: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .short-banner {
   width: 330px;
   height: 330px;
@@ -253,6 +281,7 @@ ul {
 
   color: #333333;
 }
+
 .account-list li:hover .user-menu-container {
   padding: 15px;
 }
@@ -366,7 +395,7 @@ ul {
   padding: 0 12px;
 }
 
-.menu .menu-main-categories > li:first-child,
+/* .menu .menu-main-categories > li:first-child, */
 .menu .menu-main-categories > li:hover {
   border-bottom: 1px solid var(--primary-color);
 }
