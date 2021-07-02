@@ -1,94 +1,5 @@
 @import url(../../assets/styles/common.css);
 
-.logo-search-account-container {
-  display: grid;
-  grid-template-columns: 140px 1fr 335px;
-  margin-top: 10px;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 42px;
-  background-color: #f3f3f3;
-  border-radius: 6px;
-  padding: 10px;
-  position: relative;
-  width: 600px;
-}
-
-.search input {
-  flex: 1;
-  background: none;
-  border: none;
-  outline: none;
-  font-size: 12px;
-}
-
-.search button {
-  background: none;
-  border: none;
-}
-
-/* Kopyalandı (START) [searchbar dropdown]*/
-
-.search .searchbar-dropdown {
-  background-color: #ffffff;
-  width: 600px;
-  height: 167px;
-  z-index: 1;
-  position: absolute;
-  top: 100%;
-  right: -1px; /* //TODO:  burası nasıl olacak */
-  left: 0px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  display: none;
-}
-
-.search:focus-within .searchbar-dropdown {
-  display: inline;
-  box-shadow: 0px 0px 0px 1px var(--primary-color);
-}
-.search:focus-within {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  box-shadow: 0px 0px 0px 1px var(--primary-color);
-}
-
-.searchbar-dropdown {
-  padding: 17px 10px 0 18px;
-}
-
-.dropdown-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.dropdown-header span {
-  font-size: 12px;
-  color: var(--primary-color);
-}
-
-.dropdown-header button {
-  font-size: 12px;
-  color: #333;
-  font-family: Source Sans Pro;
-}
-
-.dropdown-body .dropdown-list {
-  padding: 0;
-  margin: 0;
-}
-
-.dropdown-body .dropdown-list a {
-  color: #333;
-  font-size: 12px;
-}
-
-/* Kopyalandı (END) */
-
 /* Kopyalandı (START) */
 .logo-search-account-container .accounts-nav {
   height: 42px;
@@ -175,7 +86,7 @@
 
 .user-menu li {
   font-size: 14px;
-  color: #1b1b1b;
+  color: var(--banner-content-color);
   height: 18px;
 }
 
@@ -192,8 +103,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* position: absolute; */
-  /* top: 20px; */
   left: -60px;
 }
 
@@ -221,24 +130,27 @@
 
 /* PRODUCT SAYFASI BAŞLANGIÇ */
 
-.bread-crumb ul {
+/* BREAD CRUMB STYLING START*/
+.bread-crumb {
   display: flex;
-  margin: 10px 0px;
+  margin: -20px 0 10px 0;
   gap: 5px;
   padding-left: 0;
 }
 
-.bread-crumb ul li:not(:first-child)::before {
+.bread-crumb li:not(:first-child)::before {
   content: url(../../assets/icons/icon-arrow-left.svg);
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px;
 }
 
 .bread-crumb ul li a {
   font-size: 14px;
-  color: #333;
+  color: var(--main-link-color);
 }
 
-/* Left Frame */
+/* BREAD CRUMB STYLING END*/
+
+/* LEFT FRAME START */
 
 .left-frame label span {
   cursor: pointer;
@@ -480,6 +392,8 @@
   font-weight: 600;
 }
 /* CARGO FILTER END */
+
+/* LEFT FRAME END */
 
 /* Producst Frame */
 
