@@ -426,6 +426,7 @@ ul {
   line-height: 16px;
   font-weight: normal;
   color: #666;
+  z-index: 1;
 }
 
 .nav-menu-sub-categories ul {
