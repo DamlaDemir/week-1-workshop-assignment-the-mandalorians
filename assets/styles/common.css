@@ -8,6 +8,7 @@
   --banner-color: #c4c4c4;
   --banner-content-color: #1b1b1b;
   --search-input-color: #f3f3f3;
+  --user-menu-border-color: #e6e6e6;
 }
 
 /* RESET CSS START */
@@ -154,6 +155,115 @@ rectangle {
 }
 
 /*SEARCH BAR STYLING END*/
+
+/* HEADER ACCOUNTS NAV START */
+
+.logo-search-account-container .accounts-nav {
+  height: 42px;
+  justify-content: right;
+}
+
+.accounts-list ul {
+  height: 100%;
+}
+
+.accounts-nav li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.accounts-nav ul {
+  margin: 0;
+}
+
+.account-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  font-size: 12px;
+  height: 100%;
+  padding: 0;
+  margin-left: auto;
+}
+
+.account-list li a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--main-link-color);
+}
+
+.account-list li a:hover {
+  color: var(--primary-color);
+}
+
+.account-list li a:hover svg path {
+  fill: var(--account-link-hover-color);
+}
+
+.account-list li:first-child {
+  color: var(--primary-color);
+}
+
+.account-list li:hover {
+  position: relative;
+}
+
+.account-list li:hover .user-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* HEADER ACCOUNTS NAV END */
+
+/* USER-MENU START */
+
+.user-menu {
+  display: none;
+  width: 170px;
+  height: 289px;
+  padding: 15px 10px;
+  background-color: var(--secondary-text-color);
+  border: 1px solid var(--user-menu-border-color);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+  position: absolute;
+  top: 41px;
+  left: -60px;
+  z-index: 999;
+}
+
+.user-menu:after,
+.user-menu:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--secondary-text-color);
+  /* bottom: -20px; */ /* TODO: triangle border'ını etkiliyor */
+  top: -10px;
+  transform: rotate(180deg);
+  content: "";
+  left: 59%;
+  margin-left: -10px;
+  position: absolute;
+}
+
+.user-menu:before {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 11px solid;
+  border-top-color: inherit;
+  /* bottom: -23px; */ /* TODO: triangle border'ını etkiliyor */
+  top: -11px;
+  margin-left: -11px;
+}
+
+.user-menu li {
+  font-size: 14px;
+  color: #1b1b1b;
+  height: 18px;
+}
+/* USER-MENU END */
 
 /* NAVIGATION MENU START */
 .nav-menu {
