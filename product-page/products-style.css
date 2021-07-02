@@ -1,5 +1,6 @@
 :root {
   --primary-color: #f27a1a;
+  --secondary-color: #666666;
   --account-link-color: #333;
   --account-link-hover-color: var(--primary-color);
   --banner-color: #c4c4c4;
@@ -35,6 +36,14 @@ ul {
   margin: 0;
   padding: 0;
   /* TODO: margin padding hep sıkıntı çıkarıyor */
+}
+
+.orange-text {
+  color: var(--primary-color);
+}
+
+.ligth-text {
+  color: var(--secondary-color);
 }
 
 .container {
@@ -169,7 +178,6 @@ ul {
 
 /* Kopyalandı (END) */
 
-
 .account-list {
   display: flex;
   justify-content: flex-end;
@@ -200,7 +208,7 @@ ul {
   height: 289px;
   padding: 15px 10px;
   background-color: #fff;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
   position: absolute;
   top: 41px;
@@ -213,10 +221,10 @@ ul {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #fff;
-  /* bottom: -20px; */  /* TODO: triangle border'ını etkiliyor */
+  /* bottom: -20px; */ /* TODO: triangle border'ını etkiliyor */
   top: -10px;
   transform: rotate(180deg);
-  content: '';
+  content: "";
   left: 59%;
   margin-left: -10px;
   position: absolute;
@@ -234,10 +242,9 @@ ul {
 
 .user-menu li {
   font-size: 14px;
-  color: #1B1B1B;
+  color: #1b1b1b;
   height: 18px;
 }
-
 
 .account-list li:first-child {
   color: var(--primary-color);
@@ -712,9 +719,78 @@ ul {
 
 /* endregion Cargo Filter Wrapper */
 
-/* Producst Frame */
+/* #region Product Items */
 
-.products-frame {
-  background-color: lightgrey;
-  height: 100px;
+main {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
 }
+
+.product-card {
+  width: 230px;
+  position: relative;
+}
+
+.product-description {
+  padding: 5px 21px 5px 22px;
+}
+.product-title {
+  font-size: 14px;
+}
+.product-campaign {
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 4px 6px 3px 7px;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.product-campaign > .orange-text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ratings {
+  display: flex;
+  gap: 4px;
+}
+
+.price-tag {
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+
+.result-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.fav-button-wrapper {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  right: 10px;
+  top: 10px;
+  padding: 12px 12px 12px 11px;
+  cursor: pointer;
+}
+
+.fav-button-wrapper:hover .icon {
+  stroke: orange;
+}
+
+.comment-number {
+  font-size: 14px;
+  line-height: 18px;
+  color: #999999;
+  padding-left: 4px;
+}
+
+/* #endregion Product Items */
