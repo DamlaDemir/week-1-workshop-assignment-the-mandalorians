@@ -18,6 +18,7 @@ html,
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
 }
 
 * {
@@ -461,6 +462,12 @@ ul {
   color: #333;
 }
 
+/* Left Frame */
+
+.left-frame label span {
+  cursor: pointer;
+}
+
 .left-frame-header {
   display: inline-block;
   font-weight: 600;
@@ -503,6 +510,7 @@ ul {
   background-color: transparent;
   padding: 0;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 /*Fırsat Ürünleri*/
