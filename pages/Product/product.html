@@ -12,25 +12,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="products-style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <div class="container">
     <rectangle></rectangle>
+
+    <!-- BANNER START-->
     <section class="top-banner">
-      <img src="../assets/images/top-banner.jpg" alt="Trendyol üst kampanya banner" />
+      <img src="../../assets/images/top-banner.jpg" alt="Trendyol üst kampanya banner" />
     </section>
+    <!-- BANNER END-->
 
     <header>
+
+      <!-- HEADER LINKS START -->
       <div class="header-links">
         <a href="https://partner.trendyol.com/onboarding/satici-formu">Trendyol'da Satış Yap</a>
         <a href="https://www.trendyol.com/yardim/sorular">Yardım & Destek</a>
       </div>
+      <!-- HEADER LINKS END -->
 
+      <!-- LOGO-SEARCH-ACCOUNT CONTAINER START -->
       <div class="logo-search-account-container">
         <a href="/">
-          <img src="../assets/images/logo.svg" alt="Trendyol Logo" />
+          <img src="../../assets/images/logo.svg" alt="Trendyol Logo" />
         </a>
         <form class="search" action="" method="POST">
           <input type="search" placeholder="Aradığınız ürün, kategori veya markayı yazınız" />
@@ -183,6 +190,9 @@
           </ul>
         </nav>
       </div>
+      <!-- LOGO-SEARCH-ACCOUNT CONTAINER START -->
+
+      <!-- NAVIGATION MENU START -->
       <nav class="nav-menu">
         <ul class="nav-menu-main-categories">
           <li><a href="#">KADIN</a></li>
@@ -190,6 +200,7 @@
           <li><a href="#">ÇOCUK</a></li>
           <li>
             <a href="#">EV & YAŞAM</a>
+
             <!--NAVIGATION MENU SUB CATEGORIES START-->
             <div class="nav-menu-sub-categories">
               <ul>
@@ -437,15 +448,16 @@
                 <li><a href="#" class="nav-menu-dropdown-links">Ampul</a></li>
               </ul>
               <img
-                src="assets/images/categories-image.jpg"
-                alt="categories first ad"
+                src="../../assets/images/categories-image.jpg"
+                alt="campaign1"
               />
               <img
-                src="assets/images/categories-image.jpg"
-                alt="categories first ad"
+                src="../../assets/images/categories-image.jpg"
+                alt="campaign2"
               />
             </div>
             <!--NAVIGATION MENU SUB CATEGORIES END-->
+
           </li>
           <li><a href="#">SÜPERMARKET</a></li>
           <li><a href="#">KOZMETİK</a></li>
@@ -454,6 +466,8 @@
           <li><a href="#">ELEKTRONİK</a></li>
         </ul>
       </nav>
+      <!-- NAVIGATION MENU END -->
+
     </header>
     <!--Products-->
     <section class="content-wrapper">
@@ -464,9 +478,15 @@
           <li><a href="#">Giyim</a></li>
         </ul>
       </div>
+
+      <!-- MAIN CONTENT START-->
       <div class="content">
+
+        <!--FILTER CONTENT START-->
         <aside class="left-frame">
-          <div class="related-categories">
+
+          <!-- RELATED CATEGORIES FILTER START -->
+          <div class="related-categories-filter-wrapper">
             <span class="left-frame-header">İlgili Kategoriler</span>
             <ul>
               <li><a href="#" class="left-frame-text">T-shirt</a></li>
@@ -479,8 +499,12 @@
             </ul>
             <button class="show-more">DAHA FAZLA GÖSTER</button>
           </div>
+          <!-- RELATED CATEGORIES FILTER END -->
+
           <div class="seperator"><span></span></div>
-          <div class="product-with-stars">
+
+          <!-- PRODUCT WITH STARS FILTER START -->
+          <div class="product-with-stars-filter-wrapper">
             <span class="left-frame-header">Fırsat Ürünleri</span>
             <ul class="product-stars">
               <li class="left-frame-text">
@@ -503,8 +527,12 @@
               </li>
             </ul>
           </div>
+          <!-- PRODUCT WITH STARS FILTER END -->
+
           <div class="seperator"><span></span></div>
-            <div class="brand-filter-wrapper">
+
+          <!-- BRAND FILTER START -->
+          <div class="brand-filter-wrapper">
               <span class="left-frame-header">Marka</span>
               <input
                 class="brand-search-bar"
@@ -695,9 +723,13 @@
                   </li>
                 </ul>
               </div>
-            </div>
-            <div class="seperator"><span></span></div>
-            <div class="price-filter-wrapper">
+          </div>
+          <!-- BRAND FILTER END -->
+
+          <div class="seperator"><span></span></div>
+
+          <!-- PRICE FILTER START -->
+          <div class="price-filter-wrapper">
                 <form method="POST" class="price-filter-form">
                     <div class="price-range-search-wrapper">
                         <input type="text" name="min" class="min-max-price-input" placeholder="En Az"> - <input type="text" name="max" class="min-max-price-input" placeholder="En Çok">
@@ -734,9 +766,13 @@
                     <a href="#" class="price-filter-item-link"><input type="radio" name="price" class="price-filter-item-radio" id="ninety-one-hundred-twenty-five"><label for="ninety-one-hundred-twenty-five">90 TL - 125 TL</label><a>
                     <a href="#" class="price-filter-item-link"><input type="radio" name="price" class="price-filter-item-radio" id="one-hundred-twenty-five-four-thousand"><label for="one-hundred-twenty-five-four-thousand">125 TL - 4000 TL</label></a>
                 </form>
-            </div>
-            <div class="seperator"><span></span></div>
-            <div class="cargo-filter-wrapper">
+          </div>
+          <!-- PRICE FILTER END -->
+
+          <div class="seperator"><span></span></div>
+
+          <!-- CARGO FILTER START -->
+          <div class="cargo-filter-wrapper">
                 <ul>
                     <li class="left-frame-text">
                       <label class="checkbox-container"
@@ -745,10 +781,16 @@
                         <span class="checkbox-text">Kargo Bedava</span></label>
                     </li>
                 </ul>
-            </div>
-          </aside>
-          <main class="products-frame">products frame</main>
-        </div>
+          </div>
+          <!-- CARGO FILTER END -->
+
+        </aside>
+        <!--FILTER CONTENT END -->
+
+        <main class="products-frame">products frame</main>
+      </div>
+      <!-- MAIN CONTENT END-->
+
       </section>
     </div>
   </body>

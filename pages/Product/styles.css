@@ -1,61 +1,4 @@
-:root {
-  --primary-color: #f27a1a;
-  --account-link-color: #333;
-  --account-link-hover-color: var(--primary-color);
-  --banner-color: #c4c4c4;
-}
-
-rectangle {
-  position: absolute;
-  background: #e8e8e8;
-  width: 1920px;
-  height: 1px;
-  top: 191px;
-  left: 0px;
-}
-
-html,
-body {
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: initial;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  /* TODO: margin padding hep sıkıntı çıkarıyor */
-}
-
-.container {
-  width: 1080px;
-  margin: 0 auto;
-}
-
-.header-links {
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-}
-
-.header-links a {
-  color: #999999;
-  font-size: 12px;
-}
-
-.header-links a:hover {
-  color: #666666;
-}
+@import url(../../assets/styles/common.css);
 
 .logo-search-account-container {
   display: grid;
@@ -88,7 +31,7 @@ ul {
   border: none;
 }
 
-/* Kopyalandı (START) [searchbar dropdown]*/ 
+/* Kopyalandı (START) [searchbar dropdown]*/
 
 .search .searchbar-dropdown {
   background-color: #ffffff;
@@ -144,7 +87,6 @@ ul {
   font-size: 12px;
 }
 
-
 /* Kopyalandı (END) */
 
 /* Kopyalandı (START) */
@@ -168,7 +110,6 @@ ul {
 }
 
 /* Kopyalandı (END) */
-
 
 .account-list {
   display: flex;
@@ -200,7 +141,7 @@ ul {
   height: 289px;
   padding: 15px 10px;
   background-color: #fff;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
   position: absolute;
   top: 41px;
@@ -213,10 +154,10 @@ ul {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #fff;
-  /* bottom: -20px; */  /* TODO: triangle border'ını etkiliyor */
+  /* bottom: -20px; */ /* TODO: triangle border'ını etkiliyor */
   top: -10px;
   transform: rotate(180deg);
-  content: '';
+  content: "";
   left: 59%;
   margin-left: -10px;
   position: absolute;
@@ -234,10 +175,9 @@ ul {
 
 .user-menu li {
   font-size: 14px;
-  color: #1B1B1B;
+  color: #1b1b1b;
   height: 18px;
 }
-
 
 .account-list li:first-child {
   color: var(--primary-color);
@@ -279,171 +219,6 @@ ul {
   margin-right: 20px;
 }
 
-/* menu header başlangıç */
-
-/* .menu {
-  margin: 30px 0;
-  width: 1095px;
-}
-
-.menu .menu-main-categories {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 0;
-  text-align: center;
-}
-
-.menu .menu-main-categories > li {
-  font-size: 14px;
-  font-weight: 600;
-  color: #333;
-  padding: 0 12px;
-}
-
-.menu .menu-main-categories > li:first-child {
-  border-bottom: 1px solid #fff;
-}
-.menu .menu-main-categories > li:hover {
-  border-bottom: 1px solid var(--primary-color);
-}
-
-.menu-sub-categories {
-  display: none;
-  position: absolute;
-  flex-flow: column wrap;
-  width: 1100px;
-  height: 335px;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: normal;
-  color: #666;
-  background-color: #fff;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-  left: 0;
-  top: 20px;
-  gap: 20px;
-  padding: 24px 24px 0 24px;
-  text-align: initial;
-}
-
-.menu-sub-categories ul {
-  padding: 0;
-}
-
-.menu-sub-categories ul li:first-child {
-  font-size: 15px;
-  color: #333333;
-  line-height: 19px;
-}
-
-.menu-main-categories ul li {
-  margin-bottom: 2.5px;
-}
-
-.menu .menu-main-categories > li:hover .menu-sub-categories {
-  display: flex;
-}
-
-.menu-sub-categories img {
-  width: 300px;
-  height: 120px;
-} */
-
-/* KOPYALANDI NAV MENU (START)) */
-  
-.nav-menu {
-  margin: 30px 0;
-  width: 1095px;
-}
-
-.nav-menu .nav-menu-main-categories {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 0;
-  text-align: center;
-}
-
-.nav-menu .nav-menu-main-categories > li {
-  padding: 0 25px 9px 25px;
-}
-
-.nav-menu .nav-menu-main-categories > li:first-child {
-  border-bottom: 1px solid white;
-}
-
-.nav-menu .nav-menu-main-categories > li:hover {
-  border-bottom: 1px solid var(--primary-color);
-}
-
-.nav-menu .nav-menu-main-categories > li > a {
-  font-size: 14px;
-  font-weight: 600;
-  color: #333;
-  white-space: nowrap;
-}
-
-.nav-menu-sub-categories {
-  display: none;
-  position: absolute;
-  flex-flow: column wrap;
-  width: 1100px;
-  height: 335px;
-  background-color: #fff;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-  left: 0;
-  top: 30px;
-  gap: 20px;
-  padding: 24px 24px 24px 24px;
-  text-align: initial;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: normal;
-  color: #666;
-  z-index: 1;
-}
-
-.nav-menu-sub-categories ul {
-  padding: 0;
-}
-
-.nav-menu-dropdown-links {
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: normal;
-  color: #666;
-}
-
-.nav-menu-dropdown-links:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
-  transition: color 250ms, text-decoration 50ms;
-}
-
-.nav-menu-sub-categories ul li:first-child a {
-  font-size: 15px;
-  color: #333333;
-  line-height: 19px;
-  font-weight: inherit;
-}
-
-.nav-menu .nav-menu-main-categories > li:hover .nav-menu-sub-categories {
-  display: flex;
-}
-
-.nav-menu-sub-categories img {
-  width: 300px;
-  height: 120px;
-}
-
-
-
-/* KOPYALANDI NAV MENU (END) */
-
-
-/* menu header bitiş */
-
 /* PRODUCT SAYFASI BAŞLANGIÇ */
 
 .bread-crumb ul {
@@ -454,7 +229,7 @@ ul {
 }
 
 .bread-crumb ul li:not(:first-child)::before {
-  content: url(../assets/icons/icon-arrow-left.svg);
+  content: url(../../assets/icons/icon-arrow-left.svg);
   margin: 0px 10px 0px 10px;
 }
 
@@ -494,7 +269,7 @@ ul {
   margin: 20px 0;
 }
 
-.related-categories ul li {
+.related-categories-filter-wrapper ul li {
   height: 16px;
   margin-bottom: 5px;
   /* TODO: related categories a tagları arasında 5px boşluk olacak fakat daha iyi bir yöntem varmı ?*/
@@ -591,8 +366,7 @@ ul {
   top: 3px;
 }
 
-/* region Brand Filter Wrapper */
-
+/* BRAND FILTER START */
 .brand-filter-wrapper {
   height: 251px;
 }
@@ -620,24 +394,22 @@ ul {
   margin-bottom: 10px;
 }
 
-::-webkit-scrollbar {
+.brand-filters::-webkit-scrollbar {
   width: 8px;
 }
 
-::-webkit-scrollbar-track {
+.brand-filters::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb {
+.brand-filters::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
 }
+/* BRAND FILTER END */
 
-/* endregion Brand Filter Wrapper */
-
-/* region Price Filter Wrapper */
-
+/* PRICE FILTER START */
 .price-filter-wrapper {
   font-size: 12px;
   line-height: 15px;
@@ -699,18 +471,15 @@ ul {
   background-color: var(--primary-color);
   box-shadow: 0 0 0 1px var(--primary-color);
 }
+/* PRICE FILTER END */
 
-/* endregion Price Filter Wrapper */
-
-/* region Cargo Filter Wrapper */
-
+/* CARGO FILTER START */
 .cargo-filter-wrapper .checkbox-text {
   color: #000000;
   font-size: 14px;
   font-weight: 600;
 }
-
-/* endregion Cargo Filter Wrapper */
+/* CARGO FILTER END */
 
 /* Producst Frame */
 

@@ -1,59 +1,4 @@
-:root {
-  --primary-color: #f27a1a;
-  --account-link-color: #333;
-  --account-link-hover-color: var(--primary-color);
-  --secondary-text-color: #ffffff;
-  --banner-color: #c4c4c4;
-  --banner-content-color: #1b1b1b;
-}
-
-rectangle {
-  position: absolute;
-  background: #e8e8e8;
-  width: 1920px;
-  height: 1px;
-  top: 191px;
-  left: 0px;
-}
-
-html,
-body {
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.container {
-  width: 1080px;
-  margin: 0 auto;
-}
-
-.header-links {
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-}
-
-.header-links a {
-  color: #999999;
-  font-size: 12px;
-}
-
-.header-links a:hover {
-  color: #666666;
-}
+@import url(../../assets/styles/common.css);
 
 .logo-search-account-container {
   display: grid;
@@ -180,7 +125,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: var(--account-link-color);
+  color: var(--main-link-color);
 }
 
 .account-list li a:hover {
@@ -374,89 +319,3 @@ ul {
 }
 
 /* #endregion banner */
-
-/* -- REGION NAVIGATION MENU */
-
-.nav-menu {
-  margin: 30px 0;
-  width: 1095px;
-}
-
-.nav-menu-main-categories {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 0;
-  text-align: center;
-}
-
-.nav-menu-main-categories > li {
-  padding: 0 25px 9px 25px;
-}
-
-.nav-menu-main-categories > li:hover {
-  border-bottom: 1px solid var(--primary-color);
-}
-
-.nav-menu-main-categories > li:first-child {
-  border-bottom: 1px solid white;
-}
-
-.nav-menu-main-categories > li > a {
-  font-size: 14px;
-  font-weight: 600;
-  color: #333;
-  white-space: nowrap;
-}
-
-.nav-menu-sub-categories {
-  display: none;
-  width: 1100px;
-  height: 335px;
-  background-color: #fff;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-  left: 0;
-  top: 30px;
-  gap: 20px;
-  padding: 24px;
-  text-align: initial;
-  font-size: 13px;
-  color: #666;
-  z-index: 1;
-}
-
-.nav-menu-sub-categories ul {
-  padding: 0;
-}
-
-.nav-menu-dropdown-links {
-  font-size: 13px;
-  line-height: 16px;
-  color: #666;
-}
-
-.nav-menu-dropdown-links:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
-  transition: color 250ms, text-decoration 50ms;
-}
-
-.nav-menu-sub-categories ul li:first-child a {
-  font-size: 15px;
-  color: #333333;
-  line-height: 19px;
-  font-weight: inherit;
-}
-
-.nav-menu-main-categories > li:hover .nav-menu-sub-categories {
-  display: flex;
-  flex-flow: column wrap;
-  position: absolute;
-}
-
-.nav-menu-sub-categories img {
-  width: 300px;
-  height: 120px;
-}
-
-/* -- ENDREGION NAVIGATION MENU */
