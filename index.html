@@ -14,79 +14,63 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/styles/home.css" />
   </head>
 
   <body>
     <div class="container">
       <rectangle></rectangle>
+
+      <!-- BANNER START-->
       <section class="top-banner">
         <img
-          src="assets/images/top-banner.jpg"
+          src="../../assets/images/top-banner.jpg"
           alt="Trendyol üst kampanya banner"
         />
       </section>
+      <!-- BANNER END-->
 
       <header>
+        <!-- HEADER LINKS START -->
         <div class="header-links">
           <a href="https://partner.trendyol.com/onboarding/satici-formu"
             >Trendyol'da Satış Yap</a
           >
           <a href="https://www.trendyol.com/yardim/sorular">Yardım & Destek</a>
         </div>
+        <!-- HEADER LINKS END -->
 
+        <!-- LOGO-SEARCH-ACCOUNT CONTAINER START -->
         <div class="logo-search-account-container">
           <a href="/">
-            <img src="assets/images/logo.svg" alt="Trendyol Logo" />
+            <img src="../../assets/images/Logo.svg" alt="Trendyol Logo" />
           </a>
-          <form class="search" action="" method="POST">
+
+          <!--SEARCH BAR START-->
+          <form class="search" action="#" method="POST">
             <input
               type="search"
               placeholder="Aradığınız ürün, kategori veya markayı yazınız"
             />
-            <button>
-              <svg
-                width="19"
-                height="18"
-                viewBox="0 0 19 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M19.4109 17.306L14.7269 12.603C15.9255 11.2393 16.5879 9.48658 16.5909 7.671C16.5909 3.441 13.0269 0 8.64593 0C4.26494 0 0.699951 3.441 0.699951 7.671C0.699951 11.901 4.26494 15.342 8.64593 15.342C10.2684 15.3483 11.855 14.8645 13.1979 13.954L17.9179 18.694C18.1149 18.891 18.3799 19 18.6639 19C18.9339 19 19.1889 18.9 19.3819 18.72C19.4795 18.6308 19.558 18.5227 19.6126 18.4023C19.6673 18.2819 19.6969 18.1516 19.6997 18.0194C19.7025 17.8872 19.6784 17.7558 19.629 17.6332C19.5795 17.5106 19.5056 17.3993 19.4119 17.306H19.4109ZM8.64593 2.001C11.8839 2.001 14.5189 4.545 14.5189 7.671C14.5189 10.798 11.8839 13.341 8.64593 13.341C5.40694 13.341 2.77295 10.798 2.77295 7.671C2.77295 4.545 5.40694 2.001 8.64593 2.001Z"
-                    fill="#F27A1A"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect
-                      width="17.9999"
-                      height="18"
-                      fill="white"
-                      transform="translate(0.699951)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
+            <button type="button"></button>
             <div class="searchbar-dropdown">
               <div class="dropdown-header">
                 <span>Geçmiş Aramalar</span>
-                <button>Temizle</button>
+                <button type="button">Temizle</button>
               </div>
-              <div class="dropdown-body">
-                <ul class="dropdown-list">
-                  <li><a href="#">Robot Süpürge</a></li>
-                  <li><a href="#">iPhone 11</a></li>
-                </ul>
-              </div>
+              <ul class="dropdown-list">
+                <li><a href="#">Robot Süpürge</a></li>
+                <li><a href="#">iPhone 11</a></li>
+              </ul>
             </div>
           </form>
+          <!--SEARCH BAR END-->
+
+          <!-- ACCOUNT NAV START -->
           <nav class="accounts-nav">
             <ul class="account-list">
               <li>
-                <a href="product-page/products.html">
+                <a href="./pages/product.html">
                   <svg
                     width="18"
                     height="16"
@@ -115,8 +99,7 @@
                       >
                         <path
                           d="M0.886963 2.89001L6.62349 5.1275V14.9675L0.924612 12.6338L0.886963 2.89001ZM8.03801 14.9987L13.795 12.6337V2.95375L8.05737 5.09623L8.03801 14.9987ZM7.33557 3.9775L12.602 1.9175L7.33557 0L1.94647 1.91624L7.33557 3.9775Z"
-                          fill="#999999"
-                        />
+                          fill="#999999" />
                       </svg>
                       Siparişlerim
                     </a>
@@ -246,7 +229,7 @@
                 </ul>
               </li>
               <li>
-                <a href="https://www.trendyol.com/hesabim/favoriler">
+                <a href="#">
                   <svg
                     width="21"
                     height="16"
@@ -263,7 +246,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.trendyol.com/sepetim#/basket">
+                <a href="#">
                   <svg
                     width="19"
                     height="16"
@@ -281,7 +264,9 @@
               </li>
             </ul>
           </nav>
+        <!-- ACCOUNT NAV END -->
         </div>
+        <!-- LOGO-SEARCH-ACCOUNT CONTAINER END -->
 
         <!-- NAVIGATION MENU START -->
         <nav class="nav-menu">
@@ -538,17 +523,10 @@
                   </li>
                   <li><a href="#" class="nav-menu-dropdown-links">Ampul</a></li>
                 </ul>
-                <img
-                  src="assets/images/categories-image.jpg"
-                  alt="campaign1"
-                />
-                <img
-                  src="assets/images/categories-image.jpg"
-                  alt="campaign2"
-                />
+                <img src="../../assets/images/categories-image.jpg" alt="campaign1" />
+                <img src="../../assets/images/categories-image.jpg" alt="campaign2" />
               </div>
               <!--NAVIGATION MENU SUB CATEGORIES END-->
-
             </li>
             <li><a href="#">SÜPERMARKET</a></li>
             <li><a href="#">KOZMETİK</a></li>
@@ -558,103 +536,129 @@
           </ul>
         </nav>
         <!-- NAVIGATION MENU END -->
-
       </header>
+
       <!-- STORY START -->
-      <section class="stroy-wrapper">
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">Sana Özel</label>
-        </div>
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">Sen De Al! </label>
-        </div>
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">Ev Bakım </label>
-        </div>
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">Kişisel Bakım </label>
-        </div>
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">İçecek </label>
-        </div>
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">Pet Shop </label>
-        </div>
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">Gıda </label>
-        </div>
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">Sağlık </label>
-        </div>
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">Doğal Ürünler </label>
-        </div>
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">Favoriler </label>
-        </div>
-        <div class="story-item">
-          <img
-            class="story-image"
-            src="assets/images/story-image.png"
-            alt="Story image"
-          />
-          <label class="story-text">Aksesuar </label>
-        </div>
+      <section class="story-wrapper">
+        <ul class="story-list">
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >Sana Özel</label>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >Sende Al</label>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >Ev Bakımı</label>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >Kişisel Bakım</label>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >İçecek</label>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >Pet Shop</label>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >Gıda</label>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >Sağlık</label>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >Doğal Ürünler</label>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >Favoriler</label>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="story-item">
+              <img
+                class="story-image"
+                src="./assets/images/story-image.png"
+                alt="Story image"
+              />
+              <span >Aksesuar</label>
+            </a>
+          </li>
+      </ul>
       </section>
       <!-- STORY END -->
 
+      <!-- MAIN WRAPPER START-->
       <div class="content">
-        <div class="main">
+        <!--MAIN CONTENT START-->
+        <main>
           <article class="long-banner">
             <a href="#">
               <div class="long-banner-holder">750x310</div>
@@ -662,7 +666,7 @@
                 Flaş 500 Ürün Saat & Gözlük
                 <span class="banner-link"
                   >Alışverişe Başla<img
-                    src="assets/icons/icon-right-arrow.svg"
+                    src="./assets/icons/icon-right-arrow.svg"
                     alt="Alışverişe Başla"
                     width="5"
                     height="10"
@@ -677,7 +681,7 @@
                 Saatte Dev İndirim
                 <span class="banner-link"
                   >Alışverişe Başla<img
-                    src="assets/icons/icon-right-arrow.svg"
+                    src="./assets/icons/icon-right-arrow.svg"
                     alt="Alışverişe Başla"
                     width="5"
                     height="10"
@@ -685,16 +689,22 @@
               </div>
             </a>
           </article>
-        </div>
-        <div class="sidebar">
+        </main>
+        <!--MAIN CONTENT END-->
+
+        <!--SIDEBAR START-->
+        <aside>
           <a href="#">
             <div class="short-banner-holder">330x330</div>
           </a>
           <a href="#">
             <div class="short-banner-holder">330x330</div>
           </a>
-        </div>
+        </aside>
+        <!--SIDEBAR END-->
+        
       </div>
+      <!-- MAIN CONTENT END-->
     </div>
   </body>
 </html>
