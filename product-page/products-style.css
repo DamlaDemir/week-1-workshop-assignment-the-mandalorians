@@ -721,10 +721,23 @@ ul {
 
 /* #region Product Items */
 
-main {
+.card-container {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 20px;
+  margin-top: 14px;
+}
+
+.result-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-content > #sorting{
+  width: 180px;
+  height: 30px;
+  border: 1px solid var(--banner-color);
+  color: var(--secondary-color);
 }
 
 .product-card {
@@ -763,7 +776,7 @@ main {
   font-size: 14px;
 }
 
-.result-text {
+.results-text {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
