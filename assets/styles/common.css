@@ -35,6 +35,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 /* RESET CSS END */
 
 .container {
@@ -66,6 +67,7 @@ rectangle {
 .header-links a:hover {
   color: var(--sub-link-color);
 }
+
 /* HEADER LINKS END */
 
 /* LOGO-SEARCH-ACCOUNT CONTAINER START */
@@ -74,6 +76,7 @@ rectangle {
   grid-template-columns: 140px 1fr 335px;
   margin-top: 10px;
 }
+
 /* LOGO-SEARCH-ACCOUNT CONTAINER END */
 
 /*SEARCH BAR STYLING START*/
@@ -103,7 +106,7 @@ rectangle {
   cursor: pointer;
 }
 
-.search > button::after {
+.search>button::after {
   content: url(../../assets/icons/icon-search.svg);
 }
 
@@ -125,6 +128,7 @@ rectangle {
   display: inline;
   box-shadow: 0px 0px 0px 1px var(--primary-color);
 }
+
 .search:focus-within {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -205,17 +209,12 @@ rectangle {
   color: var(--main-link-color);
 }
 
-
 .account-list li:hover > a {
   color: var(--primary-color);
 }
 
-.account-list li a:hover {
-  color: var(--primary-color);
-}
-
-.account-list li a:hover svg path {
-  fill: var(--account-link-hover-color);
+.account-list li:hover > a svg path {
+  fill: var(--primary-color)
 }
 
 .account-list li:first-child {
@@ -278,6 +277,10 @@ rectangle {
   height: 18px;
 }
 
+.user-menu li:hover>a svg path {
+  fill: var(--primary-color);
+}
+
 /* USER-MENU END */
 
 /* NAVIGATION MENU START */
@@ -294,20 +297,24 @@ rectangle {
   text-align: center;
 }
 
-.nav-menu-main-categories > li {
-  padding: 0 25px 9px 25px;
+.nav-menu-main-categories>li {
+  /* padding: 0 25px 9px 25px; */
+
+  cursor: pointer;
 }
 
-.nav-menu-main-categories > li:first-child,
-.nav-menu-main-categories > li:hover {
+.nav-menu-main-categories>li:first-child {border-bottom: 1px solid white}
+.nav-menu-main-categories>li:hover {
   border-bottom: 1px solid var(--primary-color);
 }
 
-.nav-menu-main-categories > li > a {
+.nav-menu-main-categories>li>a {
   font-size: 14px;
   font-weight: 600;
   color: var(--main-link-color);
   white-space: nowrap;
+  padding: 0 25px 9px 25px;
+  display: inline-block;
 }
 
 .nav-menu-sub-categories {
@@ -345,7 +352,11 @@ rectangle {
   font-weight: inherit;
 }
 
-.nav-menu-main-categories > li:hover .nav-menu-sub-categories {
+.nav-menu-sub-categories ul li:first-child a:hover {
+  color: var(--primary-color);
+}
+
+.nav-menu-main-categories>li:hover .nav-menu-sub-categories {
   display: flex;
   flex-flow: column wrap;
   position: absolute;

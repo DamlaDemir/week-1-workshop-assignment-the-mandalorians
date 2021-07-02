@@ -359,9 +359,8 @@ aside li {
   cursor: pointer;
 }
 
-.fav-button-wrapper:hover .icon ,
-.account-list>li:hover .icon {
-  stroke: orange;
+.fav-button-wrapper:hover .icon  {
+  stroke: var(--primary-color);
 }
 
 .comment-number {
