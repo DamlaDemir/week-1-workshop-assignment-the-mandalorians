@@ -1,14 +1,11 @@
-@import url(../../assets/styles/common.css);
+@import url(./common.css);
 
-.short-banner {
-  width: 330px;
-  height: 330px;
-  margin-bottom: 40px;
-}
-
-.stroy-wrapper {
+/* STORY WRAPPER START */
+.story-wrapper {
   margin-top: 29px;
   margin-bottom: 27px;
+}
+.story-list{
   display: flex;
   flex-direction: row;
   gap: 26px;
@@ -18,39 +15,47 @@
   width: 75px;
   gap: 10px;
   flex-direction: column;
+  align-items:center;
 }
 
-.story-item label {
+.story-item:hover > .story-image{
+  border-radius:100%;
+  border:1px solid var(--primary-color);
+}
+.story-item:hover > span{
+  color:var(--primary-color)
+}
+
+.story-image{
+  border-radius:100%;
+  border:1px solid transparent
+}
+
+.story-item  > span {
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
-
   text-align: center;
-
   color: #333333;
+  width:69px;
 }
 
-.account-list li:hover .user-menu-container {
-  padding: 15px;
-}
 
-.triangle {
-  border-color: blue transparent transparent transparent;
-  border-style: solid;
-  border-width: 20px 10px 0px 10px;
-  width: 0px;
-  height: 0px;
-}
+/* STORY WRAPPER END */
 
-/* #region banner */
-
+/* CONTENT START */
 .content {
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 20px;
+}
+
+.short-banner {
+  width: 330px;
+  height: 330px;
+  margin-bottom: 40px;
 }
 
 .long-banner {
@@ -64,8 +69,8 @@
 
 .long-banner a,
 .long-banner a:visited,
-.sidebar a,
-.sidebar a:visited {
+aside a,
+aside a:visited {
   text-decoration: none;
   color: #000000;
 }
@@ -118,9 +123,8 @@
   align-items: center;
 }
 
-.main:last-child,
-.sidebar:last-child {
+main:last-child,
+aside:last-child {
   margin-bottom: 0;
 }
-
-/* #endregion banner */
+/* CONTENT END */

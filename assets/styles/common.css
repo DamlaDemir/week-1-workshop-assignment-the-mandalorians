@@ -9,6 +9,8 @@
   --banner-content-color: #1b1b1b;
   --search-input-color: #f3f3f3;
   --user-menu-border-color: #e6e6e6;
+  --seperator-color: #ececec;
+  --menu-index: 1;
 }
 
 /* RESET CSS START */
@@ -43,7 +45,7 @@ ul {
 rectangle {
   position: absolute;
   background: #e8e8e8;
-  width: 1920px;
+  width: 100vw;
   height: 1px;
   top: 191px;
   left: 0px;
@@ -98,13 +100,18 @@ rectangle {
 .search button {
   background: none;
   border: none;
+  cursor: pointer;
+}
+
+.search > button::after {
+  content: url(../../assets/icons/icon-search.svg);
 }
 
 .search .searchbar-dropdown {
   background-color: var(--secondary-text-color);
   width: 600px;
   height: 167px;
-  z-index: 1;
+  z-index: var(--menu-index);
   position: absolute;
   top: 100%;
   right: -1px;
@@ -187,11 +194,20 @@ rectangle {
   margin-left: auto;
 }
 
+.account-list li {
+  cursor: pointer;
+}
+
 .account-list li a {
   display: flex;
   align-items: center;
   gap: 5px;
   color: var(--main-link-color);
+}
+
+
+.account-list li:hover > a {
+  color: var(--primary-color);
 }
 
 .account-list li a:hover {
@@ -231,7 +247,7 @@ rectangle {
   position: absolute;
   top: 41px;
   left: -60px;
-  z-index: 999;
+  z-index: var(--menu-index);
 }
 
 .user-menu:after,
@@ -239,7 +255,6 @@ rectangle {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid var(--secondary-text-color);
-  /* bottom: -20px; */ /* TODO: triangle border'ını etkiliyor */
   top: -10px;
   transform: rotate(180deg);
   content: "";
@@ -253,7 +268,6 @@ rectangle {
   border-right: 11px solid transparent;
   border-top: 11px solid;
   border-top-color: inherit;
-  /* bottom: -23px; */ /* TODO: triangle border'ını etkiliyor */
   top: -11px;
   margin-left: -11px;
 }
@@ -263,6 +277,7 @@ rectangle {
   color: #1b1b1b;
   height: 18px;
 }
+
 /* USER-MENU END */
 
 /* NAVIGATION MENU START */
@@ -283,10 +298,7 @@ rectangle {
   padding: 0 25px 9px 25px;
 }
 
-.nav-menu-main-categories > li:first-child {
-  border-bottom: 1px solid var(--secondary-text-color);
-}
-
+.nav-menu-main-categories > li:first-child,
 .nav-menu-main-categories > li:hover {
   border-bottom: 1px solid var(--primary-color);
 }
@@ -311,7 +323,7 @@ rectangle {
   text-align: initial;
   font-size: 13px;
   color: var(--sub-link-color);
-  z-index: 1;
+  z-index: var(--menu-index);
 }
 
 .nav-menu-dropdown-links {
